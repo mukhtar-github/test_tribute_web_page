@@ -1,0 +1,51 @@
+#main{
+  max-width: 1190px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+ display: block;
+}
+
+input, select, textarea{
+ display: block;
+ margin-bottom: 10px;
+ height: 30px;
+ width: 100%;
+}
+
+fieldset { 
+  margin-top: 30px;
+  height: auto;
+}
+
+fieldset input{
+  display: inline-block;
+  height: 10px;
+  margin-bottom: 0;
+  width: 10px;
+}
+.checkboxes{
+  margin-bottom: 40px;
+}
+.checkboxes input{
+  margin-top: 30px;
+  display: inline-block;
+  height: 10px;
+  margin-bottom: 0;
+  width: 30px;
+  height: 20px;
+}
+
+textarea { 
+  height: 103px;
+}
+
+button{
+  
+}
+

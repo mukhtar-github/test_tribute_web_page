@@ -4,22 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
   <title>Survey</title>
 </head>
 
 <body>
+
+  <div id="main">
+
+ 
   <h1 id="title">Survey Form</h1>
   <p id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem similique inventore labore
     est sunt distinctio accusantium?</p>
   <form id="survey-form">
     <label for="name" id="name-label">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Input your Name">
+    <input type="text" id="name" name="name" placeholder="Input your Name" required>
     <label for="email" id="email-label">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Input your Email">
+    <input type="email" id="email" name="email" placeholder="Input your Email" required>
     <label for="number" id="number-label">Number:</label>
     <input type="number" id="number" name="number" min="1" max="5" placeholder="Number">
-    <label for="cars">Choose a car:</label>
 
+    <label for="cars">Choose a color:</label>
     <select name="name" id="dropdown">
       <option value="red">Red</option>
       <option value="blue">Blue</option>
@@ -27,21 +35,36 @@
       <option value="black">Black</option>
     </select>
 
-    <input type="radio" id="male" name="vehicle1" value="Male">
-    <label for="Male"> Male</label><br>
-    <input type="radio" id="female" name="vehicle2" value="Female">
-    <label for="female"> Female</label><br>
-    <input type="radio" id="others" name="others" value="Others">
-    <label for="others"> Others</label><br>
+    <fieldset>
+      <legend>Select your gender</legend>
+      <input id="male" type="radio" name="items" value="male">
+      <label for="male">Male</label><br>
+      <input id="female" type="radio" name="items" value="two">
+      <label for="female">Female</label><br>
+      <input id="others" type="radio" name="items" value="ohers">
+      <label for="others">Others</label>
+    </fieldset>
+
+    <div class="checkboxes">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label for="vehicle1"> I have a bike</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> I have a car</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> I have a boat</label>
+    </div>
+    
   
     <textarea id="comments" name="comments" rows="4" cols="50">
       
     </textarea>
     <br>
 
-    <button type="submit" id="submit">Submit</button>
+    <button class="btn btn-primary" type="submit" id="submit">Submit</button>
 
   </form>
+</div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
